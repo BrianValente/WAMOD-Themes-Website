@@ -1,0 +1,163 @@
+#settings {
+	margin:auto;
+	width:950px;
+	background-color: #505050;
+	border-radius: 3px;
+	box-shadow: rgba(0, 0, 0, .5) 0 0 7px;
+	margin-top: 50px;
+	position: relative;
+	font-size: 0px;
+	min-height: 300px;
+}
+
+#settings * {
+	box-sizing:border-box;
+}
+
+#settings_nav {
+	width:150px;
+	height: 100%;
+	display: inline-block;
+	background-color: #404040;
+	border-radius: 3px 0 0 3px;
+	padding: 5px 0;
+	position: absolute;
+}
+
+#settings_nav span {
+	display: block;
+	width:100%;
+	padding:15px 0;
+	padding-left: 16px;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	transition:linear background-color .07s;
+	cursor: pointer;
+	margin-bottom:2px;
+}
+
+#settings_nav span.active,
+#settings_nav span:hover {
+	background-color: #373737;
+}
+
+#settings_pages {
+	width:800px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	margin-left: 150px;
+}
+
+#settings_pages > div {
+	display:none;
+}
+
+#settings_pages > div.active {
+	display:block;
+}
+
+input.input {
+	outline:none;
+	border-radius: 3px;
+	border:solid 1px #313131;
+	background-color: #404040;
+	padding:5px 8px;
+	color:#eee;
+	transition:linear box-shadow .1s;
+}
+
+input.input:focus,
+input.input:active {
+	box-shadow: rgba(0,0,0,.5) 0 0 4px;
+}
+
+input[readonly] {
+	color:#aaa;
+}
+
+.device {
+	padding: 20px;
+	transition: linear background .07s;
+	margin-bottom:5px;
+	height: 55px;
+}
+
+.device:hover {
+	background:rgba(0,0,0,.15);
+}
+
+.device_name,
+.device_model,
+.device_separator {
+	font-size: 15px;
+	color:white;
+}
+
+.device_model,
+.device_separator {
+	color: #aaa;
+}
+
+.device_message {
+	font-size: 13px;
+	float: right;
+	color: #aaa;
+	margin-top: 1px;
+}
+
+.device_actions {
+	float: right;
+	min-height: 3px;
+	height:100%;
+	margin-left: 6px;
+}
+
+.device_delete,
+.device_edit,
+.device_rename {
+	width:15px;
+	height:15px;
+	display: inline-block;
+	-webkit-mask-box-image: url(../images/close_15.png);
+	background-color: #aaa;
+	display: inline-block;
+	cursor: pointer;
+	margin-left: 2px;
+	transition: linear background .07s;
+}
+
+.device_edit {
+	width:29px;
+	-webkit-mask-box-image: url(../images/edit_15.png);
+}
+
+.device_rename {
+	width:41px;
+	-webkit-mask-box-image: url(../images/rename_15.png);
+}
+
+.device_delete:hover ,
+.device_edit:hover,
+.device_rename:hover {
+	background-color: #fff;
+}
+
+h2 {
+	font-size:18px;
+	margin:20px 0px 20px 20px;
+}
+
+#devices_addnew {
+	float:right;
+	color:#aaa;
+	font-size: 13px;
+	margin:10px;
+	cursor: pointer;
+	transition: linear color .07s;
+}
+
+#devices_addnew:hover {
+	color:#fff;
+}

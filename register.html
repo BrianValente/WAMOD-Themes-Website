@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register - WAMOD Themes</title>
+		<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+		<link rel="stylesheet" type="text/css" href="styles/register.css" />
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<?php include('header.php'); ?>
+		<div class="wrapper">
+			<div id="steps_container">
+				<div id="step_1" class="step active">
+					<span class="number">1</span>
+					<span class="description">Your basic info</span>
+				</div>
+				<div id="step_2" class="step">
+					<span class="number">2</span>
+					<span class="description">Verify your account</span>
+				</div>
+				<div id="step_3" class="step">
+					<span class="number">3</span>
+					<span class="description">Link your device</span>
+				</div>
+			</div>
+			<div id="pages_container">
+				<div id="page_1" class="page">
+					<span class="title">Create your account</span>
+					<div style="text-align:center">
+						<input id="firstname" placeholder="First name" />
+						<input id="lastname" placeholder="Last name" />
+						<input id="username" placeholder="User name" />
+						<input id="email" placeholder="E-mail" />
+						<input id="password" placeholder="Password" type="password" />
+						<span class="next button" href="#" onclick="onRegisterNextPressed();return false;"><img src="images/loading.gif" />Next</span>
+					</div>
+				</div>
+				<div id="page_2" class="page">
+					<span class="title">Verification sent</span>
+					<div style="text-align:center; font-size:12px; line-height: 16px;">
+						Check your e-mail and open the link to validate your account. If you can't find an e-mail from us check your spam.
+					</div>
+				</div>
+		</div>
+		<script src="scripts/script.js"></script>
+		<script src="scripts/md5.js"></script>
+		<script src="scripts/register.js"></script>
+	</body>
+</html>

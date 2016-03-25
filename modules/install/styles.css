@@ -1,0 +1,52 @@
+#installpopup_overlay {
+	width:100%;
+	height:100%;
+	position: fixed;
+	background: rgba(0,0,0,.3);
+	display: none;
+	z-index: 89;
+}
+
+#installpopup {
+	display:none;
+	position: fixed;
+	top:40%;
+	left:50%;
+	width:500px;
+	transform: translateX(-50%) translateY(-50%);
+	background-color: #404040;
+	box-shadow:#000 0 0 50px 20px;
+	border-radius:3px;
+	z-index:90;
+	padding-bottom: 8px;
+}
+
+#installpopup .installpopup_title {
+	display:block;
+	width:100%;
+	padding:15px 10px;
+	background-color:#505050;
+	box-sizing:border-box;
+	border-radius:3px 3px 0 0;
+	margin-bottom: 8px;
+}
+
+#installpopup .installpopup_device {
+	padding:20px;
+	transition:linear background .15s;
+	cursor: pointer;
+}
+
+#installpopup .installpopup_device:hover {
+	background:rgba(255,255,255,.05);
+}
+
+#installpopup .installpopup_device_name {
+	font-size: 16px;
+	color: white;
+}
+
+#installpopup .installpopup_device_message {
+	float:right;
+	color:#aaa;
+}

@@ -1,0 +1,160 @@
+#steps_container {
+	margin:auto;
+	width:600px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.step {
+	display: inline-block;
+	text-align: center;
+	margin: 0 10px;
+	width:140px;
+}
+
+.step.active .number {
+	box-shadow:rgba(0,0,0,.4) 0 0 4px;
+	color:#ffffff;
+}
+
+.step.active .description {
+	text-shadow:#000 0 0 6px;
+	color:#ffffff;
+}
+
+.number {
+	background: #505050;
+	border-radius: 2px;
+	font-size: 12px;
+	width:22px;
+	height: 22px;
+	text-align: center;
+	padding-top: 5px;
+	padding-left: 0px;
+	box-sizing:border-box;
+	margin: 5px;
+	display: inline-block;
+	margin: auto;
+	color:#dedede;
+}
+
+.description {
+	display: block;
+	margin-top:10px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color:#dedede;
+}
+
+#pages_container {
+	width:100%;
+	text-align: center;
+}
+
+.page {
+	background:#505050;
+	border-radius:3px;
+	padding:20px 10px;
+	margin:auto;
+	display: none;
+}
+
+#page_1 {
+	width:220px;
+}
+
+#page_2 {
+	width:420px;
+}
+
+#page_3 {
+	width:auto;
+	display:inline-block;
+	padding-bottom: 10px;
+}
+
+.title {
+	font-size:14px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+	width: 100%;
+	margin-bottom:25px;
+}
+
+.page input {
+	width:170px;
+	height:17px;
+	background:transparent;
+	color:white;
+	outline: 0;
+	padding:0 3px;
+	border: none;
+	border-bottom: solid 1px #888888;
+	font-weight: normal;
+	font-size: 12px;
+	margin:auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	display: block;
+}
+
+.page input:focus {
+	border-bottom-color: #eeeeee;
+}
+
+.page input.disabled {
+	color:#555555;
+	border-bottom-color: #888888;
+}
+
+.empty_msg {
+	background:#F44336;
+	border-radius:4px;
+	padding:6px 8px;
+	font-size: 12px;
+	display: inline;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index:99;
+	animation:linear empty_msg_animation 2s forwards;
+}
+
+.empty_msg:before {
+	position: absolute;
+	content: '';
+	display: block;
+	width:0px;
+	height:0px;
+	border:solid 5px transparent;
+	border-right-color: #F44336;
+	top:7px;
+	left:-10px;
+}
+
+@keyframes empty_msg_animation {
+	0% {opacity:0;}
+	5% {opacity:1;}
+	80% {opacity:1;}
+	100% {opacity:0;}
+}
+
+#message.animate {
+	animation:linear fade 4s;
+}
+
+@keyframes fade {
+	0% {
+		opacity:1;
+	}
+	90% {
+		opacity:1;
+	}
+	100% {
+		opacity:0;
+	}
+}
